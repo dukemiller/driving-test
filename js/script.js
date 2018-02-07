@@ -83,7 +83,7 @@ class Quiz extends React.Component {
         this.state = {
             source: props.source,
             state: 'ALL_QUESTIONS',
-            questions: shuffle([...props.source]).splice(0,2),
+            questions: shuffle([...props.source]),
             missed: [],
             index: 0,
             session: guid()
